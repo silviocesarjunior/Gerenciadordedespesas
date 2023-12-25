@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  background-color: #c5c1c1;
+  padding: 10px;
+  margin: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ece7e7;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+  border-color: #007bff;
+}
+
+.button-add {
+  padding: 10px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #277ad3;
+}
+
+.summary {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.summary h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#total-amount {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0e7536b7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-menu {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.category-menu ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-menu li {
+  margin-right: 10px;
+  cursor: pointer;
+  color: #007bff;
+  font-weight: bold;
+  transition: color 0.7s ease;
+}
+
+.category-menu li:hover {
+  color: #0056b3;
+}
+
+.transaction-list {
+  margin-bottom: 10px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.transaction-list h2 {
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+li {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed #3f2020;
+  padding: 6px;
+  color: #555;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+
+.amount {
+  font-weight: bold;
+}
+
+.expense {
+  color: #333;
+  margin-bottom: 6px;
+  color: #dc3545;
+  font-weight: bold;
+}
+
+.income {
+  color: #333;
+  margin-bottom: 6px;
+  color: #0e7536b7;
+  font-weight: bold;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+@media screen and (max-width:480px){
+  .form {
+    display: inline;
+    align-items: center;
+    justify-content: center;
+  }
+}
